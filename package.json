@@ -1,0 +1,42 @@
+{
+  "name": "kingdom-come-deliverance-map",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "preview": "npm run build && vite preview --open",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "pinia": "^2.2.6",
+    "pinia-plugin-persistedstate": "^4.1.3",
+    "pixi.js": "^8.5.2",
+    "victor": "^1.1.0",
+    "vite": "^5.4.11"
+  },
+  "browsersList": [
+    "cover 99%"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/lodash.throttle": "^4.1.9",
+    "@types/node": "^22.9.1",
+    "@types/victor": "^1.1.5",
+    "autoprefixer": "^10.4.20",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.12.0",
+    "postcss": "^8.4.49",
+    "sass": "^1.81.0",
+    "typescript": "^5.6.3"
+  }
+}

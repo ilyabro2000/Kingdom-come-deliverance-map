@@ -1,2 +1,9 @@
+import { App } from '@/canvas/App';
+
 const rootElement = document.getElementById('root');
-console.log(rootElement);
+
+if (!rootElement) {
+  throw new Error('Root element not found');
+}
+
+const app = new App(rootElement);

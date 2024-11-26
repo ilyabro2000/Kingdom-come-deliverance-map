@@ -1,4 +1,5 @@
 import { App } from '@/canvas/App';
+import '@/styles/main.scss';
 
 const rootElement = document.getElementById('root');
 

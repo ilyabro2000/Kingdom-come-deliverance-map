@@ -1,0 +1,83 @@
+@import "@/styles/responsive.scss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+  max-height: 100%;
+  line-height: 1.4;
+  overflow: hidden;
+  font-family: $font-default !important;
+  color: white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 0.6944444444vw;
+
+  @include layout-mobile {
+    font-size: 2.6666666667vw;;
+  }
+
+  *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    vertical-align: baseline;
+  }
+
+  ::-webkit-scrollbar {
+    width: .5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color:  transparent;
+    -webkit-border-radius: .6rem;
+    border-radius: 3rem;
+
+    @include layout-mobile {
+      -webkit-border-radius: .5rem;
+      border-radius: 3rem;
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: .6rem;
+    border-radius: .6rem;
+
+    @include layout-mobile {
+      -webkit-border-radius: .5rem;
+      border-radius: .5rem;
+    }
+  }
+}
+
+html, body {
+  background: $color-bg;
+  color: $color-white;
+}
+
+#app {
+  height: 100%;
+  font-size: 1.4rem;
+}
+
+button {
+  &:hover {
+    @include layout-mobile {
+      opacity: 1 !important;
+    }
+  }
+  &:active {
+    @include layout-mobile {
+      opacity: 0.6 !important;
+    }
+  }
+  &:focus {
+    @include layout-mobile {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    }
+  }
+}

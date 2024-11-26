@@ -3,7 +3,7 @@ import { initDevtools } from '@pixi/devtools';
 import { AppViewport } from '@/canvas/AppViewport';
 
 export class App extends Application {
-  public viewport: AppViewport;
+  public viewport?: AppViewport;
 
   constructor(target: HTMLElement) {
     super();
@@ -22,7 +22,6 @@ export class App extends Application {
       this.viewport = new AppViewport(this.renderer.events);
       this.stage.addChild(this.viewport);
     });
-
 
     initDevtools({ app: this });
   }

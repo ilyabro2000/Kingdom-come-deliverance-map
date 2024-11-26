@@ -1,10 +1,12 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
   "extends": [
-    "airbnb-base"
+    "airbnb-base",
+    "plugin:@typescript-eslint/recommended"
   ],
   "settings": {
     "import/resolver": {
@@ -34,12 +36,12 @@
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
     "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "no-restricted-syntax": "off",
     "no-param-reassign": "off",
     "for-direction": "off",
     "no-continue": "off",
     "class-methods-use-this": "off",
-    "no-console": "off",
-    "@typescript-eslint/no-unused-vars": "error"
+    "no-console": "off"
   }
 }

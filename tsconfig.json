@@ -10,7 +10,6 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "noEmit": true,
-    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
@@ -24,6 +23,8 @@
       ]
     },
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/main.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx",
+    "src/main.ts"
+  ],
   "exclude": ["node_modules"]
 }

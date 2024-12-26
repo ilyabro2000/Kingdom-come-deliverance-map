@@ -31,6 +31,8 @@
         "js": "never"
       }
     ],
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": "off",
     "indent": "off",
     "@typescript-eslint/indent": ["error", 2],
     "no-shadow": "off",
